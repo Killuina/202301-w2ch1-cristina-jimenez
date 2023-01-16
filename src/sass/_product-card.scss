@@ -1,0 +1,85 @@
+@use "variables/color";
+@use "variables/text";
+
+.product-card {
+  height: 608px;
+  width: 345px;
+  gap: 15px;
+  background-color: color.$netural-color-white;
+  border-radius: 10px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    gap: 5px;
+    font-size: 1rem;
+    color: color.$netural-color-dark-blue;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+  }
+  &__photo {
+    height: 240px;
+    width: 345px;
+
+    img {
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__category {
+    display: block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: color.$netural-color-greyish-blue;
+  }
+
+  &__product-name {
+    font-family: text.$secondary-typography;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  &__description {
+    color: color.$netural-color-greyish-blue;
+    line-height: 25px;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__previous-price {
+    text-decoration: line-through;
+    font-size: 0.8rem;
+  }
+
+  &__current-price {
+    font-family: text.$secondary-typography;
+    color: color.$primary-color-dark-cian;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__add-to-cart-button {
+    color: #fff;
+    background-color: color.$primary-color-dark-cian;
+    height: 2.5rem;
+    margin: 0 24px;
+    border-radius: 10px;
+    span {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+  }
+}
+
+.brand {
+  text-transform: uppercase;
+}
