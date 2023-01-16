@@ -66,11 +66,20 @@
     font-weight: 700;
   }
 
-  &__add-to-card-button {
+  &__add-to-cart-button {
     color: #fff;
     background-color: color.$primary-color-dark-cian;
     height: 2.5rem;
     margin: 0 24px;
     border-radius: 10px;
+    span {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
   }
+}
+
+.brand {
+  text-transform: uppercase;
 }
