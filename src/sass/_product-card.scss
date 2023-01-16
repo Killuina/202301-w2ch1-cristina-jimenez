@@ -12,7 +12,7 @@
   flex-direction: column;
 
   &__content {
-    gap: 10px;
+    gap: 5px;
     font-size: 1rem;
     color: color.$netural-color-dark-blue;
     display: flex;
@@ -22,9 +22,9 @@
   &__photo {
     height: 240px;
     width: 345px;
-    border-radius: 10px;
 
     img {
+      border-radius: 10px 10px 0 0;
       width: 100%;
       object-fit: cover;
     }
@@ -34,6 +34,7 @@
     display: block;
     letter-spacing: 2px;
     text-transform: uppercase;
+    color: color.$netural-color-greyish-blue;
   }
 
   &__product-name {
@@ -42,12 +43,20 @@
     font-size: 2rem;
   }
 
+  &__description {
+    color: color.$netural-color-greyish-blue;
+    line-height: 25px;
+  }
+
   &__price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   &__previous-price {
     text-decoration: line-through;
-    font-size: 10px;
+    font-size: 0.8rem;
   }
 
   &__current-price {
