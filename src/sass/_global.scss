@@ -1,1 +1,8 @@
+@use "variables/text";
+@use "variables/color";
 
+body {
+  background-color: color.$primary-color-cream;
+  font-family: text.$main-typograpy;
+  display: flex;
+}
